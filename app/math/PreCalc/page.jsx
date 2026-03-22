@@ -6,8 +6,8 @@ function page() {
   const link = "hover:text-violet-300 hover:bg-violet-100 px-1";
   return (
     <PageWrapper
-      gradient="from-pink-100 to-rose-300"
-      fontColor="text-rose-900"
+      gradient="from-yellow-100 to-indigo-300"
+      fontColor="text-violet-900"
     >
       <div className="my">
         <h1 className="text-5xl text-center tracking-wide py-6">Algebra 2</h1>
