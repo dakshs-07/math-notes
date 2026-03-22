@@ -5,7 +5,7 @@ import {Moon} from 'lucide-react';
 function TopBar() {
   return (
     <div>
-      <div className="flex justify-center items-center gap-6 text-sm bg-amber-700 h-7 text-white">
+      <div className="flex justify-center items-center gap-6 text-sm bg-black h-7 text-white">
         <Link href="/">Formula Sheets</Link>
         <Link href="/">Feedback</Link>
         <Link href="/">Contact</Link>
