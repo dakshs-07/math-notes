@@ -1,15 +1,28 @@
 const linearEquations = {
-    title: "Linear Equations",
-    sections: [
+  title: "Linear Equations",
+  sections: [
+    {
+      heading: "Form",
+      content: [
         {
-            heading: "Form",
-            content: "y = mx + b"
+          type: "text",
+          value: "A linear equation looks like",
         },
         {
-            heading: "Slope Intercept from",
-            content: "y_1 = x^2"
-        }
-    ],
-}
+          type: "inline",
+          value: "y=mx+b",
+        },
+        {
+          type: "text",
+          value: "This is the next block",
+        },
+        {
+          type: "block",
+          value: "y = 2x+3",
+        },
+      ],
+    },
+  ],
+};
 
 export default linearEquations;
