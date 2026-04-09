@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-function Book({color, title, link}) {
+function Book({ color, title, link }) {
   return (
     <div>
       <Link href={link}>
@@ -9,7 +9,7 @@ function Book({color, title, link}) {
           <div
             className={`${color} m-2 w-full h-full flex justify-center items-center`}
           >
-            <h1 className="text-center text-xl">{title}</h1>
+            <h1 className="text-center text-xl z-10">{title}</h1>
           </div>
         </div>
       </Link>
@@ -17,4 +17,4 @@ function Book({color, title, link}) {
   );
 }
 
-export default Book
+export default Book;

@@ -20,7 +20,7 @@ export default function Home() {
           These have even been called lifesavers.
         </p>
       </div>
-      <div className="flex items-center justify-center gap-10">
+      <div className="grid lg:grid-cols-5 sm:grid-cols-2 gap-5 px-20">
         <Book color="bg-amber-100" title="Algebra 1" link="/math/Algebra1" />
         <Book color="bg-purple-100" title="Algebra 2" link="/math/Algebra2" />
         <Book color="bg-teal-100" title="Geometry" link="/math/Geometry" />
