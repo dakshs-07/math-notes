@@ -7,14 +7,16 @@ function Navbar() {
   let bgColor = "bg-white";
   if (pathname.startsWith("/math/Algebra1")) {
     bgColor = "bg-green-200";
-  } else if (pathname==="/math/Algebra2") {
+  } else if (pathname === "/math/Algebra2") {
     bgColor = "bg-red-300";
   } else if (pathname === "/math/Geometry") {
     bgColor = "bg-blue-300";
   } else if (pathname === "/math/PreCalc") {
     bgColor = "bg-violet-200";
+  } else if (pathname === "/math/Calculus") {
+    bgColor = "bg-yellow-200";
   } else {
-    bgColor = "bg-gray-200";
+    bgColor = "bg-gray-300";
   }
   const linkstyle = "hover:underline hover:opacity-70";
   return (
@@ -31,6 +33,9 @@ function Navbar() {
         </Link>
         <Link href="/math/PreCalc" className={linkstyle}>
           PreCalculus
+        </Link>
+        <Link href="/math/Calculus" className={linkstyle}>
+          Calculus
         </Link>
       </div>
     </div>
