@@ -5,7 +5,7 @@ function Book({color, title, link}) {
   return (
     <div>
       <Link href={link}>
-        <div className="w-50 h-70 my-5 mx-2 bg-black cursor-pointer hover:translate-1">
+        <div className="w-50 h-70 mb-10 mx-2 bg-black cursor-pointer hover:-translate-2 hover:brightness-90 transition">
           <div
             className={`${color} m-2 w-full h-full flex justify-center items-center`}
           >
