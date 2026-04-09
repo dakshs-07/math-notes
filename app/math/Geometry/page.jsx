@@ -16,7 +16,7 @@ function page() {
     "Circles"
   ]
   return (
-    <PageWrapper gradient="from-blue-100 to-blue-300" fontColor="text-blue-900">
+    <PageWrapper gradient="from-slate-100 to-blue-200" fontColor="text-blue-900">
       <div>
         <h1 className="text-5xl text-center tracking-wide py-6">Geometry</h1>
         <div className="flex justify-around">

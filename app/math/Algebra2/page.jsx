@@ -15,7 +15,7 @@ function page() {
     "Radical Functions"
   ]
   return (
-    <PageWrapper gradient="from-pink-100 to-rose-300" fontColor="text-rose-900">
+    <PageWrapper gradient="from-rose-100 to-stone-300" fontColor="text-rose-900">
       <div>
         <h1 className="text-5xl text-center tracking-wide py-6">Algebra 2</h1>
         <div className="flex justify-around">

@@ -1,3 +1,4 @@
+import ComingSoon from "@/components/ComingSoon";
 import PageWrapper from "@/components/PageWrapper";
 import PreviewCard from "@/components/PreviewCard";
 import Link from "next/link";
@@ -10,9 +11,10 @@ function page() {
   const topics = ["Functions", "Limits", "Continuity"];
   return (
     <PageWrapper
-      gradient="from-white to-yellow-100"
-      fontColor="text-yellow-900"
+      gradient="from-emerald-100 to-stone-200"
+      fontColor="text-stone-800"
     >
+      <ComingSoon />
       <div>
         <h1 className="text-5xl text-center tracking-wide py-6">Calculus</h1>
         <div className="flex justify-around">

@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)"],
         heading: ["var(--font-montserrat)"],
+        montserrat: ["var(--font-montserrat)"]
       },
     },
   },

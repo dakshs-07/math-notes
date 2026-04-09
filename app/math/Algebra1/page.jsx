@@ -14,8 +14,8 @@ function page() {
   ]
   return (
     <PageWrapper
-      gradient="from-emrald-100 to-teal-200"
-      fontColor="text-emrald-900"
+      gradient="from-stone-200 to-lime-100"
+      fontColor="text-stone-900"
     >
       <div>
         <h1 className="text-5xl text-center tracking-wide py-6">Algebra 1</h1>
