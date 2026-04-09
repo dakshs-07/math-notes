@@ -21,7 +21,7 @@ i also ended up deciding to use mongodb to store notes and data and let me tell 
 -add admin page for adding notes
 - add 3-4 pages for each harecoded through code
 - make navbar prettier that thing could be better for sure
-- add a contact page form
+- add a contact page form: done
 - add drawings or art to each page? idk would look good
 - detailed notes for some topics already - including images
 
