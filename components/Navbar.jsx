@@ -6,7 +6,7 @@ function Navbar() {
   const pathname = usePathname();
   let bgColor = "bg-white";
   if (pathname.startsWith("/math/Algebra1")) {
-    bgColor = "bg-green-200";
+    bgColor = "bg-lime-200";
   } else if (pathname === "/math/Algebra2") {
     bgColor = "bg-red-300";
   } else if (pathname === "/math/Geometry") {
@@ -14,7 +14,7 @@ function Navbar() {
   } else if (pathname === "/math/PreCalc") {
     bgColor = "bg-violet-200";
   } else if (pathname === "/math/Calculus") {
-    bgColor = "bg-yellow-200";
+    bgColor = "bg-green-200";
   } else {
     bgColor = "bg-gray-300";
   }
