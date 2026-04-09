@@ -1,3 +1,8 @@
+# Math Notes
+i was very fortunate to learn a lot of math tricks (not necessarily memorizing or just rot understanding of stuff) but leanring diff ways of understanding, thinking abotu the problems and solving them (if you could not tell by know, theres a lot of math people in my family and around me) so i decided to make a little website to practice my coding skills while also keeping everything i have learnt in one place for later ref (i hate physical notes btw) i think this would also be a nice way for e to share diff ways of approaching probs with other people. so i decided yo make a webiste with my good old fav besties nextjs and tailwind.
+
+i also ended up deciding to use mongodb to store notes and data and let me tell you it's suhc a pain ofr me oh my i just cant wrap my head around mongodb i am certainlyt a lot better than when i started but i still dont feel bvery confident with it. but i am grateful ofr at least using it even though i fixed some mistakes about 17 times and spent a lot of unnecessary time understanding how to use it in teh first place *heavy sobbing btw*
+
 
 ## things i learnt making this project
 - got more comfortbale with elemnenst (when i made the book component)
@@ -13,6 +18,12 @@
 - recs section
 - more subjects ofc
 - practice problems
+-add admin page for adding notes
+- add 3-4 pages for each harecoded through code
+- make navbar prettier that thing could be better for sure
+- add a contact page form
+- add drawings or art to each page? idk would look good
+- detailed notes for some topics already - including images
 
 
 
