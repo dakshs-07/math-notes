@@ -9,6 +9,7 @@ function TopBar() {
         <Link href="/">Formula Sheets</Link>
         <Link href="/">Feedback</Link>
         <Link href="/">Contact</Link>
+        <Link href="/about">About</Link>
         <div className='absolute right-0'>
             <Moon size={20}/>
         </div>
