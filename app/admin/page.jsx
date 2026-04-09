@@ -40,7 +40,7 @@ function page() {
         placeholder="Title"
         className="w-full p-2 border mb-4"
         value={title}
-        onChange={(e) => setTitle(e.target.title)}
+        onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
         placeholder="math notes here, jebalyo :)"
