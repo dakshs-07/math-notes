@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 function Navbar() {
   const pathname = usePathname();
-  let bgColor = "bg-amber-200";
+  let bgColor = "bg-white";
   if (pathname.startsWith("/math/Algebra1")) {
     bgColor = "bg-green-200";
   } else if (pathname==="/math/Algebra2") {
@@ -14,7 +14,7 @@ function Navbar() {
   } else if (pathname === "/math/PreCalc") {
     bgColor = "bg-violet-200";
   } else {
-    bgColor = "bg-amber-200";
+    bgColor = "bg-gray-200";
   }
   const linkstyle = "hover:underline hover:opacity-70";
   return (
