@@ -29,6 +29,7 @@ export default function Home() {
           title="PreCalculus"
           link="/math/PreCalculus"
         />
+        <Book color="bg-pink-100" title="Calculus" link="/math/Calculus" />
       </div>
     </div>
   );

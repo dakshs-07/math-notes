@@ -2,6 +2,7 @@ import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Leebit from "@/components/Leebit";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
+        <Leebit />
         <Footer />
       </body>
     </html>
