@@ -1,3 +1,4 @@
+import ComingSoon from "@/components/ComingSoon";
 import PageWrapper from "@/components/PageWrapper";
 import Link from "next/link";
 import React from "react";
@@ -9,6 +10,7 @@ function page() {
       gradient="from-yellow-100 to-indigo-300"
       fontColor="text-violet-900"
     >
+      <ComingSoon/>
       <div className="my">
         <h1 className="text-5xl text-center tracking-wide py-6">Pre Calculus</h1>
         <div className="flex justify-around">
