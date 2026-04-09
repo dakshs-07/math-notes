@@ -135,3 +135,19 @@ h1, h2, h3, h4, h5, h6{
     @apply font-sans;
   }
 }
+
+.math-content h1{
+  @apply mb-10;
+}
+
+.math-content h2{
+  @apply text-xl mt-6;
+}
+
+.math-content p{
+  @apply text-gray-900 ml-10 mt-1;
+}
+
+.math-content ul{
+  @apply list-disc ml-6 mt-2
+}
