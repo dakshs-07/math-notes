@@ -22,6 +22,7 @@ function Navbar() {
   return (
     <div>
       <div className={`${bgColor} flex justify-center items-center gap-8 py-1`}>
+        <Link href="/" className={linkstyle}>Home</Link>
         <Link href="/math/Algebra1" className={linkstyle}>
           Algebra 1
         </Link>
