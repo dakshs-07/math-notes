@@ -1,3 +1,21 @@
+
+## things i learnt making this project
+- got more comfortbale with elemnenst (when i made the book component)
+- leanirng more tailwind properties
+- use pathNames to change properties based on path name
+- better underdstansing of nextjs dynamic paths lol i finally get it
+- i struggled with mongodb for the longest time *sobs*
+
+## more features tp add:
+- resources corner
+- handdrawn notes
+- help section
+- recs section
+- more subjects ofc
+- practice problems
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
