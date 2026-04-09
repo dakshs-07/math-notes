@@ -7,17 +7,35 @@ function Footer() {
   return (
     <div className="bg-black text-white py-5">
       <div className="flex justify-around max-h-[330px] py-1">
-        <Image src="/star.png" alt="logo" width={200} height={200} />
+        <Link href="/">
+          <Image src="/star.png" alt="logo" width={200} height={200} className='hover:brightness-150'/>
+        </Link>
         <div className="flex flex-col justify-center items-center">
-          <Link href="/" className={linkhover}>Algebra 1</Link>
-          <Link href="/" className={linkhover}>Algebra 2</Link>
-          <Link href="/" className={linkhover}>Geometry</Link>
+          <Link href="/" className={linkhover}>
+            Home
+          </Link>
+          <Link href="/about" className={linkhover}>
+            About
+          </Link>
+          <Link href="/contact" className={linkhover}>
+            Contact
+          </Link>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Link href="/" className={linkhover}>Algebra 1</Link>
-          <Link href="/" className={linkhover}>Algebra 2</Link>
-          <Link href="/" className={linkhover}>Geometry</Link>
-          <Link href="/math/PreCalc" className={linkhover}>Pre Calculus</Link>
+          <Link href="/math/Algebra1" className={linkhover}>
+            Algebra 1
+          </Link>
+          <Link href="/math/Algebra2" className={linkhover}>
+            Algebra 2
+          </Link>
+          <Link href="/math/Geometry" className={linkhover}>
+            Geometry
+          </Link>
+          <Link href="/math/PreCalc" className={linkhover}>
+            Pre Calculus
+          </Link>
+          <Link href="/math/Calculus" className={linkhover}>
+          Calculus</Link>
         </div>
       </div>
       <p className="text-sm text-center mt-3">Math Notes CC 2026</p>
