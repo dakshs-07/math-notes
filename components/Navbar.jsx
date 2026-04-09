@@ -1,18 +1,40 @@
-import Link from 'next/link'
-import React from 'react'
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
-    const linkstyle = "hover:underline hover:opacity-70"
+  const pathname = usePathname();
+  let bgColor = "bg-amber-200";
+  if (pathname.startsWith("/math/Algebra1")) {
+    bgColor = "bg-green-200";
+  } else if (pathname==="/math/Algebra2") {
+    bgColor = "bg-red-300";
+  } else if (pathname === "/math/Geometry") {
+    bgColor = "bg-blue-300";
+  } else if (pathname === "/math/PreCalc") {
+    bgColor = "bg-violet-200";
+  } else {
+    bgColor = "bg-amber-200";
+  }
+  const linkstyle = "hover:underline hover:opacity-70";
   return (
     <div>
-        <div className='bg-gray-300 flex justify-center items-center gap-8 py-1'>
-            <Link href="/math/Algebra1" className={linkstyle}>Algebra 1</Link>
-            <Link href="/math/Algebra2" className={linkstyle}>Algebra 2</Link>
-            <Link href="/math/Geometry" className={linkstyle}>Geometry</Link>
-            <Link href="/math/PreCalc" className={linkstyle}>PreCalculus</Link>
-        </div>
+      <div className={`${bgColor} flex justify-center items-center gap-8 py-1`}>
+        <Link href="/math/Algebra1" className={linkstyle}>
+          Algebra 1
+        </Link>
+        <Link href="/math/Algebra2" className={linkstyle}>
+          Algebra 2
+        </Link>
+        <Link href="/math/Geometry" className={linkstyle}>
+          Geometry
+        </Link>
+        <Link href="/math/PreCalc" className={linkstyle}>
+          PreCalculus
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
