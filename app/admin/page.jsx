@@ -30,7 +30,7 @@ function page() {
     }
   }
   return (
-    <div className="p-6 max-w-2x mx-auto">
+    <div className="p-6 max-w-2xl mx-auto">
       <h1 className="text-2xl font-bold tracking-wide text-center mb-4">
         Admin Panel
       </h1>
