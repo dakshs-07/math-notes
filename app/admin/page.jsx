@@ -6,7 +6,7 @@ function page() {
   const [content, setContent] = useState("");
   const [subject, setSubject] = useState("");
   const [loading, setLoading] = useState(false);
-  const subjectList = ["Algebra1", "Alegbra2", "Geometry", "PreCalc", "Calculus"];
+  const subjectList = ["Algebra1", "Algebra2", "Geometry", "PreCalc", "Calculus"];
   const handleSubmit = async ()=>{
     if (!title || !content || !subject) return alert("Title and content are needed to show notes!");
     setLoading(true);
@@ -44,6 +44,7 @@ function page() {
         onChange={(e) => setTitle(e.target.value)}
       />
       <select value={subject} className="w-full p-2 border mb-4" onChange={(e)=>setSubject(e.target.value)}>
+          <option value="">Select subject</option>
           {subjectList.map((sub)=>(
             <option key={sub} value={sub}>{sub}</option>
           ))}

@@ -9,8 +9,8 @@ function slugify(text) {
 
 export async function POST(req) {
   try {
-    const { title, content } = await req.json();
-    if (!title || !content) {
+    const { title, subject, content } = await req.json();
+    if (!title || !content || !subject) {
       return Response.json(
         { error: "Missing fields! Check again bro" },
         { status: 404 },
@@ -22,7 +22,7 @@ export async function POST(req) {
 
     const result = await db
       .collection("notes")
-      .insertOne({ title, slug, content, createdAt: new Date() });
+      .insertOne({ title, subject, slug, content, createdAt: new Date() });
 
     return Response.json({ ...result, slug });
   } catch (err) {
