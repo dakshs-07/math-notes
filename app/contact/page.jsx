@@ -23,6 +23,7 @@ function page() {
           width={1200}
           height={600}
           className="w-full h-auto"
+          loading="eager"
         />
       </div>
       <PageWrapper gradient="from-white to-pink-100" fontColor="text-black">

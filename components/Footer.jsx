@@ -8,7 +8,14 @@ function Footer() {
     <div className="bg-black text-white py-5">
       <div className="flex justify-around max-h-82.5 py-1">
         <Link href="/">
-          <Image src="/star.png" alt="logo" width={200} height={200} className='hover:brightness-150'/>
+          <Image
+            src="/star.png"
+            alt="logo"
+            width={200}
+            height={200}
+            className="hover:brightness-150"
+            loading="eager"
+          />
         </Link>
         <div className="flex flex-col justify-center items-center gap-4">
           <Link href="/" className={linkhover}>
@@ -35,10 +42,13 @@ function Footer() {
             Pre Calculus
           </Link>
           <Link href="/math/Calculus" className={linkhover}>
-          Calculus</Link>
+            Calculus
+          </Link>
         </div>
       </div>
-      <p className="text-sm text-center mt-3 text-gray-300">Math Notes CC 2026</p>
+      <p className="text-sm text-center mt-3 text-gray-300">
+        Math Notes CC 2026
+      </p>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import React from "react";
 function page() {
   const link = "hover:text-blue-500 hover:bg-blue-100 px-1";
   const slugify = (text) => text.toLowerCase().replace(/\s+/g, "-")
-  const basePath = "/math/Algebra"
+  const basePath = "/math/Geometry"
   const topics = [
     "Parallel Lines",
     "Triangle and Trianlge Properties",
