@@ -17,11 +17,11 @@ export async function POST(req) {
       );
     }
     const client = await clientPromise;
-    const db = client.db("MathNotesApp ");
+    const db = client.db("MathNotesApp");
     const slug = slugify(title);
 
     const result = await db
-      .collection("Cluster0")
+      .collection("notes")
       .insertOne({ title, slug, content, createdAt: new Date() });
 
     return Response.json({ ...result, slug });
