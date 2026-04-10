@@ -31,31 +31,45 @@ function page() {
     }
   }
   return (
-    <div className="p-6 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold tracking-wide text-center mb-4">
-        Admin Panel
-      </h1>
+    <div className="dark:bg-slate-500">
+      <div className="p-6 max-w-2xl mx-auto">
+        <h1 className="text-2xl font-bold tracking-wide text-center mb-4">
+          Admin Panel
+        </h1>
 
-      <input
-        type="text"
-        placeholder="Title"
-        className="w-full p-2 border mb-4"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <select value={subject} className="w-full p-2 border mb-4" onChange={(e)=>setSubject(e.target.value)}>
+        <input
+          type="text"
+          placeholder="Title"
+          className="w-full p-2 border dark:border-white mb-4"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <select
+          value={subject}
+          className="w-full p-2 border dark:border-white mb-4"
+          onChange={(e) => setSubject(e.target.value)}
+        >
           <option value="">Select subject</option>
-          {subjectList.map((sub)=>(
-            <option key={sub} value={sub}>{sub}</option>
+          {subjectList.map((sub) => (
+            <option key={sub} value={sub}>
+              {sub}
+            </option>
           ))}
-      </select>
-      <textarea
-        placeholder="math notes here, jebalyo :)"
-        className="w-full p-2 border h-64 mb-4"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-      />
-      <button onClick={handleSubmit} className="bg-black text-white px-4 py-2 hover:bg-gray-200 hover:text-black cursor-pointer" disabled={loading}>{loading?"Saving...": "Save"}</button>
+        </select>
+        <textarea
+          placeholder="math notes here, jebalyo :)"
+          className="w-full p-2 border dark:border-white h-64 mb-4"
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+        />
+        <button
+          onClick={handleSubmit}
+          className="bg-black text-white px-4 py-2 hover:bg-gray-200 hover:text-black cursor-pointer"
+          disabled={loading}
+        >
+          {loading ? "Saving..." : "Save"}
+        </button>
+      </div>
     </div>
   );
 }

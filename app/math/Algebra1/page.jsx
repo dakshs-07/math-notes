@@ -4,7 +4,8 @@ import Link from "next/link";
 import React from "react";
 
 function page() {
-  const link = "hover:text-emrald-300 hover:bg-emrald-400 px-1";
+  const link =
+    "hover:text-emrald-300 hover:bg-emrald-400 px-1 dark:text-gray-200 dark:hover-bg-white dark:hover:text-black transition";
   const slugify = (text) => text.toLowerCase().replace(/\s+/g, "-")
   const basePath = "/math/Algebra1"
   const topics = [
@@ -14,11 +15,11 @@ function page() {
   ]
   return (
     <PageWrapper
-      gradient="from-stone-200 to-lime-100"
+      gradient="from-stone-200 to-lime-100 dark:from-stone-500 to-lime-200"
       fontColor="text-stone-900"
     >
       <div>
-        <h1 className="text-5xl text-center tracking-wide py-6">Algebra 1</h1>
+        <h1 className="text-5xl text-center tracking-wide py-6 dark:text-white">Algebra 1</h1>
         <div className="flex justify-around">
           <div className="flex flex-col justify-center items-center gap-2">
             <h1 className="text-2xl my-5">TOPICS</h1>

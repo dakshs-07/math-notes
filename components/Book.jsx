@@ -19,7 +19,7 @@ function Book({ color, title, link }) {
               />
             </div>
 
-            <h1 className="text-center text-xl z-10">{title}</h1>
+            <h1 className="text-center text-xl z-10 dark:text-black">{title}</h1>
           </div>
         </div>
       </Link>

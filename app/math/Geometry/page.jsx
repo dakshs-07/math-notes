@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 function page() {
-  const link = "hover:text-blue-500 hover:bg-blue-100 px-1";
+  const link = "hover:text-blue-500 hover:bg-blue-100 px-1 dark:text-gray-200 dark:hover:text-black transition";
   const slugify = (text) => text.toLowerCase().replace(/\s+/g, "-")
   const basePath = "/math/Geometry"
   const topics = [
@@ -16,9 +16,9 @@ function page() {
     "Circles"
   ]
   return (
-    <PageWrapper gradient="from-slate-100 to-blue-200" fontColor="text-blue-900">
+    <PageWrapper gradient="from-slate-100 to-blue-200 dark:from-slate-500" fontColor="text-blue-900">
       <div>
-        <h1 className="text-5xl text-center tracking-wide py-6">Geometry</h1>
+        <h1 className="text-5xl text-center tracking-wide py-6 dark:text-blue-100">Geometry</h1>
         <div className="flex justify-around">
           <div className="flex flex-col justify-center items-center gap-2">
             <h1 className="text-2xl my-5">TOPICS</h1>
@@ -34,7 +34,7 @@ function page() {
           </div>
           <div className="flex flex-col items-center gap-2">
             <h1 className="text-2xl my-5">QUICK LINKS</h1>
-            <Link href="/">Cheatsheets</Link>
+            <Link href="/" className={link}>Cheatsheets</Link>
           </div>
         </div>
       </div>

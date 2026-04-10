@@ -26,15 +26,15 @@ function page() {
           loading="eager"
         />
       </div>
-      <PageWrapper gradient="from-white to-pink-100" fontColor="text-black">
+      <PageWrapper gradient="from-white to-pink-100 dark:from-slate-500" fontColor="text-black">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-5xl tracking-wide py-10">CONTACT</h1>
-          <p className="text-center max-w-[400px] text-lg">
+          <p className="text-center max-w-100 text-lg dark:text-gray-200">
             Got any questions, suggestions or spotted something wrong on the
             website? Please reacvh out through the form or{" "}
             <a
               href="mailto:dakshpinjore@gmail.com"
-              className="underline text-blue-400"
+              className="underline text-blue-400 dark:text-blue-100"
             >
               email here!
             </a>
@@ -45,7 +45,7 @@ function page() {
               placeholder="Your name"
               value={form.name}
               onChange={handleChange}
-              className="p-3 border"
+              className="p-3 border dark:bg-gray-200"
               required
             />
             <input
@@ -54,14 +54,14 @@ function page() {
               placeholder="Your email"
               value={form.email}
               onChange={handleChange}
-              className="p-3 border"
+              className="p-3 border dark:bg-gray-200"
               required
             />
             <textarea
               name="message"
               placeholder="Your message here, please"
               required
-              className="p-3 border h-32"
+              className="p-3 border h-32 dark:bg-gray-200"
             />
             <button
               className="bg-black text-white py-3 hover:opacity-80 cursor-pointer tracking-widest"

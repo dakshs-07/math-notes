@@ -4,10 +4,10 @@ import Link from "next/link";
 import React from "react";
 
 function page() {
-  const link = "hover:text-violet-700 hover:bg-yellow-100/40 px-1";
+  const link = "hover:text-violet-700 hover:bg-yellow-100/40 px-1 dark:text-gray-100 dark:hover:text-black transition";
   return (
     <PageWrapper
-      gradient="from-yellow-100 to-indigo-300"
+      gradient="from-yellow-100 to-indigo-300 dark:from-yellow-400 dark:to-indigo-900 transition"
       fontColor="text-violet-900"
     >
       <ComingSoon/>

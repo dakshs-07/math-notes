@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative dark:bg-gray-400">
       <div className="w-full h-[30vh] overflow-hidden">
         <Image
           src="/math1.jpg"
@@ -15,8 +15,8 @@ export default function Home() {
         />
       </div>
       <div className="py-12 px-6 text-center">
-        <h1 className="text-4xl font-bold mb-4 tracking-wide">Math One</h1>
-        <p className="text-lg text-gray-600 mb-6">
+        <h1 className="text-4xl font-bold mb-4 tracking-wide dark:text-black">Math One</h1>
+        <p className="text-lg text-gray-600 mb-6 dark:text-white">
           Find a bunch ogf tricks and tips for every high school math subject.
           These have even been called lifesavers.
         </p>

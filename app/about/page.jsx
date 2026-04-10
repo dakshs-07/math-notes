@@ -15,10 +15,10 @@ function page() {
           loading="eager"
         />
       </div>
-      <PageWrapper gradient="from-white to-pink-100" fontColor="text-black">
+      <PageWrapper gradient="from-white to-pink-100 dark:from-slate-500" fontColor="text-black">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-5xl tracking-wide py-10">ABOUT</h1>
-          <p className="text-center max-w-[400px] text-lg">
+          <p className="text-center max-w-100 text-lg dark:text-gray-200">
             This website was made to give fella students all the formulas, tips
             and tricks i have learned over the years that just made math so
             simple and easy. If you would like to suggest any content or

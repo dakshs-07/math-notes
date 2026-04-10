@@ -18,7 +18,7 @@ function Navbar() {
   } else {
     bgColor = "bg-gray-300";
   }
-  const linkstyle = "hover:underline hover:opacity-70";
+  const linkstyle = "hover:underline hover:opacity-70 dark:text-black";
   return (
     <div>
       <div className={`${bgColor} flex justify-center items-center gap-8 py-1`}>
