@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import {Moon} from 'lucide-react';
+import DarkMode from './DarkMode';
 
 function TopBar() {
   return (
@@ -11,7 +12,7 @@ function TopBar() {
         <Link href="/contact">Contact</Link>
         <Link href="/about">About</Link>
         <div className='absolute right-0'>
-            <Moon size={20}/>
+            <DarkMode />
         </div>
       </div>
     </div>
