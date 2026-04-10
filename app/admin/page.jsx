@@ -1,20 +1,21 @@
 "use client";
-
 import { useState } from "react";
 
 function page() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [subject, setSubject] = useState("");
   const [loading, setLoading] = useState(false);
+  const subjectList = ["Algebra1", "Alegbra2", "Geometry", "PreCalc", "Calculus"];
   const handleSubmit = async ()=>{
-    if (!title || !content ) return alert("Title and content are needed to show notes!");
+    if (!title || !content || !subject) return alert("Title and content are needed to show notes!");
     setLoading(true);
     const res = await fetch("/api/notes", {
         method: "POST",
         headers:{
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({title, content})
+        body: JSON.stringify({title, content, subject})
 
     })
     const data = await res.json();
@@ -42,6 +43,11 @@ function page() {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
+      <select value={subject} className="w-full p-2 border mb-4" onChange={(e)=>setSubject(e.target.value)}>
+          {subjectList.map((sub)=>(
+            <option key={sub} value={sub}>{sub}</option>
+          ))}
+      </select>
       <textarea
         placeholder="math notes here, jebalyo :)"
         className="w-full p-2 border h-64 mb-4"
